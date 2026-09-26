@@ -22,6 +22,8 @@ Run `npm run build:site` and `npm run preview:site` to preview the guide and pla
 
 The homepage embeds `/360/?embed=1`. The portfolio uses the same URL at this site’s origin, so the files are hosted once. Netlify’s CSP allows framing only by this origin and Kahlil’s portfolio domains. Parent pages validate the frame origin and source before accepting height messages. Fullscreen and autoplay permission allow continuous playback after a visitor starts it; they do not start playback on page load.
 
+For a small source-upload deployment, the MP4s may be omitted from the upload. `scripts/prepare-public-stories.mjs` restores any missing films from the immutable public GitHub media commit and validates their size and SHA-256 before writing them. Normal Git builds use the checked-in files without downloading them. Updating a film intentionally requires updating its manifest digest and this pinned media revision.
+
 ## Features
 
 | Tool | What it does |
