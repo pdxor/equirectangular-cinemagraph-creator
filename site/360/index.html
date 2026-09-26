@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#101512" />
+  <meta name="description" content="Ten tiny adventures in a world you can look around. Explore Boxboi's 30-second 360° stories with trip-hop music and sound effects." />
+  <meta property="og:title" content="Boxboi — Small wonders, whole worlds" />
+  <meta property="og:description" content="An interactive collection of ten 360° stories. Art, curiosity, and a little life." />
+  <meta property="og:image" content="https://equirectangular-cinemagraph-creator.netlify.app/stories/01-the-painted-path/cover.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="/favicon.svg" />
+  <link rel="canonical" href="https://equirectangular-cinemagraph-creator.netlify.app/360/" />
+  <title>Boxboi — Small wonders, whole worlds · 360° playlist</title>
+</head>
+<body>
+  <main id="player-root">
+    <header class="page-heading"><a href="/" class="back-link">← Cinemagraph Creator</a><p class="eyebrow">BOXBOI / A COLLECTION OF 360° STORIES</p><h1>Small wonders.<br /><em>Whole worlds.</em></h1><p>Ten little adventures through art, architecture, and imagination.<br />30 seconds each. Trip-hop, sound effects, and room to look around.</p></header>
+    <div class="workspace">
+      <div class="film-column">
+        <section id="cinema" aria-label="360 degree video player">
+          <div class="stage">
+            <div id="sphere" role="region" aria-label="Interactive panorama. Drag to look around. Arrow keys pan; plus and minus zoom." tabindex="0"></div>
+            <video id="video" playsinline preload="none" aria-label="Current 360 degree film"></video>
+            <span class="view-badge" id="view-badge">360° / DRAG TO EXPLORE</span>
+            <button id="start" class="start-button"><span class="play-disc" aria-hidden="true">▶</span><span id="start-label">Play with sound</span></button>
+            <div id="loading" class="loading" hidden role="status">Loading the story…</div>
+          </div>
+          <div class="controls">
+            <div class="seek-row"><span id="elapsed">0:00</span><input id="seek" type="range" min="0" max="30" step="0.1" value="0" aria-label="Seek video" /><span id="duration">0:30</span></div>
+            <div class="button-row">
+              <button id="previous" title="Previous story" aria-label="Previous story">⏮</button>
+              <button id="play" class="play-control" title="Play" aria-label="Play">▶</button>
+              <button id="next" title="Next story" aria-label="Next story">⏭</button>
+              <button id="mute" title="Mute" aria-label="Mute">Sound on</button>
+              <input id="volume" type="range" min="0" max="1" step="0.05" value="0.8" aria-label="Volume" />
+              <span class="control-spacer"></span>
+              <button id="recenter" title="Return to the characters">Recenter</button>
+              <button id="flat" aria-pressed="false">Flat view</button>
+              <button id="fullscreen" title="Fullscreen" aria-label="Enter fullscreen">⛶</button>
+            </div>
+          </div>
+        </section>
+        <div class="film-info">
+          <div class="film-meta"><span id="film-number">01 / 10</span><span id="film-location"></span></div>
+          <h2 id="film-title">The Painted Path</h2>
+          <p id="synopsis"></p>
+          <div class="film-links"><a id="download" download>Download 360° MP4 ↓</a><button id="share">Copy story link ↗</button><span id="quality"></span></div>
+          <p id="status" class="status" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+      <aside class="playlist-panel" aria-label="Story playlist">
+        <div class="playlist-heading"><div><span class="eyebrow">THE COLLECTION</span><h2>Ten small wonders.</h2></div><span class="total-time">5 MIN</span></div>
+        <div class="playlist-options"><label><input id="autonext" type="checkbox" checked /> Play next story</label><label><input id="loop" type="checkbox" /> Loop collection</label></div>
+        <nav id="playlist" aria-label="Choose a 360 degree story"></nav>
+        <p class="playlist-note">Music + sound effects · No narration<br />AI-assisted characters and animation.</p>
+      </aside>
+    </div>
+    <footer class="player-footer"><span>Drag or swipe to look around. Arrow keys pan; + / − zoom.</span><a href="https://kahlilcalavas.dev/#boxboi-360" target="_blank" rel="noreferrer">A world by Kahlil Calavas ↗</a></footer>
+    <noscript><p>Enable JavaScript for the spherical player. <a href="/stories/01-the-painted-path/film-360.mp4">Download The Painted Path as a 360° MP4</a>.</p></noscript>
+  </main>
+  <script type="module" src="./player.js"></script>
+</body>
+</html>

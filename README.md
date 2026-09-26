@@ -2,11 +2,25 @@
 
 **Give a still panorama a little life.** Select a square region, remix its image, animate it, and blend it back into a full 360° scene. Combine scenes and moving regions, add narration and music, and export a spherical MP4.
 
-[Website & selection demo](https://equirectangular-cinemagraph-creator.netlify.app) · [Getting started](#getting-started) · [How to use it](#how-to-use-it) · [Troubleshooting](#troubleshooting)
+[Website & selection demo](https://equirectangular-cinemagraph-creator.netlify.app) · [Watch ten Boxboi 360° stories](https://equirectangular-cinemagraph-creator.netlify.app/360/) · [Getting started](#getting-started) · [How to use it](#how-to-use-it) · [Troubleshooting](#troubleshooting)
 
 ![Original sample panorama: a flying saucer above a dome settlement at dusk](site/public/demo-panorama.svg)
 
-> **Where it runs:** Netlify hosts the public guide and selection demo. The complete studio runs on **your computer**, using Docker or Node.js + FFmpeg. Start it before opening [localhost:4317](http://localhost:4317). This release is a local, single-user application, not a shared cloud rendering service.
+> **Where it runs:** Netlify hosts the public guide, selection demo, and Boxboi 360° playlist. The complete studio runs on **your computer**, using Docker or Node.js + FFmpeg. Start it before opening [localhost:4317](http://localhost:4317). This release is a local, single-user application, not a shared cloud rendering service.
+
+## Watch the Boxboi collection
+
+[Small wonders, whole worlds](https://equirectangular-cinemagraph-creator.netlify.app/360/) is a public playlist of ten 30-second stories with instrumental trip-hop and sound effects, without narration. It also appears on [Kahlil’s portfolio](https://kahlilcalavas.dev/#boxboi-360). No keys or account are needed to watch.
+
+- Drag or swipe the panorama to look around. Focus the viewer and use arrow keys to pan, `+` / `−` to zoom, or **Recenter** to return to the characters.
+- Choose a story, play/pause, seek, adjust sound, enter fullscreen, or switch to a flat preview. **Play next story** continues through the collection; **Loop collection** repeats all ten. Video starts only after a visitor presses play or selects a story.
+- **Copy story link** shares a specific film. **Download 360° MP4** saves the original file with monoscopic equirectangular spherical metadata (v1 XML and v2 `sv3d/equi`). Music is stereo, not spatial audio. Sites that do not support spherical playback may still show a flat video.
+
+The standalone player is in `site/360/`; `stories.json` holds the public descriptions, camera centers, media URLs, dimensions, sizes, and SHA-256 digests. Approved public MP4s and posters are in `site/public/stories/` (about 170 MB). Only the selected video is loaded, and the player falls back to flat playback if WebGL is unavailable. These examples include AI-assisted animation and characters; the garden dome and geodesic hall are concept environments.
+
+Run `npm run build:site` and `npm run preview:site` to preview the guide and playlist at `http://127.0.0.1:4318/360/`. `npm run verify:stories` verifies every original MP4’s digest, 2:1 dimensions, fast-start layout, and spherical metadata. This also runs before each site build. Public examples are excluded from the local renderer’s Docker image. Private projects, keys, raw generation data, and narrated variants are not published.
+
+The homepage embeds `/360/?embed=1`. The portfolio uses the same URL at this site’s origin, so the files are hosted once. Netlify’s CSP allows framing only by this origin and Kahlil’s portfolio domains. Parent pages validate the frame origin and source before accepting height messages. Fullscreen and autoplay permission allow continuous playback after a visitor starts it; they do not start playback on page load.
 
 ## Features
 
@@ -86,7 +100,7 @@ Click **API settings** in the local studio, paste your keys and click **Save loc
 
 API credits, model permissions and voice/music access are managed by each provider. Consumer chat subscriptions do not necessarily include API credits. Models and the default ElevenLabs voice are configurable in the dialog; see [`.env.example`](.env.example) for defaults.
 
-**Privacy:** keys are plaintext in your local `.env`. Saved key values are never returned to the browser. The selected crop or clip goes to OpenAI/xAI when you generate; scripts and sound descriptions go to ElevenLabs. Netlify receives none of your keys or media. `.env`, projects and generated media are excluded from Git and Docker builds. To remove a key, empty its value in `.env`. Never place provider secrets in `VITE_*` variables or public build configuration.
+**Privacy:** keys are plaintext in your local `.env`. Saved key values are never returned to the browser. The selected crop or clip goes to OpenAI/xAI when you generate; scripts and sound descriptions go to ElevenLabs. The local editor does not upload your keys or private projects to Netlify. The public site separately hosts the approved Boxboi examples described above. `.env`, private projects, and raw generated media are excluded from Git and Docker builds. To remove a key, empty its value in `.env`. Never place provider secrets in `VITE_*` variables or public build configuration.
 
 ## How to use it
 

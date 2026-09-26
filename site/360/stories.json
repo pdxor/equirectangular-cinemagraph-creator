@@ -1,0 +1,206 @@
+[
+  {
+    "title": "The Painted Path",
+    "slug": "01-the-painted-path",
+    "location": "Landscape gallery",
+    "useCase": "Art discovery",
+    "cast": [
+      "Box Boi"
+    ],
+    "cx": 0.46,
+    "cy": 0.57,
+    "description": "Box Boi follows a thread of light through a gallery, discovering that curiosity can turn an ordinary room into an invitation.",
+    "duration": 30,
+    "width": 4096,
+    "height": 2048,
+    "sha256": "b90f7c2dd1404fb198672d9bf9576376d12843b51477c7b52df5c9a0be1a021a",
+    "bytes": 15424076,
+    "video": "/stories/01-the-painted-path/film-360.mp4",
+    "poster": "/stories/01-the-painted-path/poster.jpg",
+    "cover": "/stories/01-the-painted-path/cover.jpg"
+  },
+  {
+    "title": "Color Has a Pulse",
+    "slug": "02-color-has-a-pulse",
+    "location": "Abstract art gallery",
+    "useCase": "Playful arts education",
+    "cast": [
+      "Box Girl"
+    ],
+    "cx": 0.48,
+    "cy": 0.68,
+    "description": "Box Girl finds the rhythm inside a painting. Color becomes movement, and the artwork answers back.",
+    "duration": 30,
+    "width": 4096,
+    "height": 2048,
+    "sha256": "d869a979f01955959cfe5b54718798e9beffa8604457621ab43178077c8c85d1",
+    "bytes": 14582799,
+    "video": "/stories/02-color-has-a-pulse/film-360.mp4",
+    "poster": "/stories/02-color-has-a-pulse/poster.jpg",
+    "cover": "/stories/02-color-has-a-pulse/cover.jpg"
+  },
+  {
+    "title": "A Better Question",
+    "slug": "03-a-better-question",
+    "location": "Curves and geometry gallery",
+    "useCase": "Design thinking",
+    "cast": [
+      "Boxiah"
+    ],
+    "cx": 0.49,
+    "cy": 0.68,
+    "description": "Boxiah experiments with light and geometry, finding new possibilities in the relationship between a few simple shapes.",
+    "duration": 30,
+    "width": 4096,
+    "height": 2048,
+    "sha256": "345e9a3bcf3ff202312db2d99f6e3ad5bbcbee1f8c71732ced4b14ecbe3bd94f",
+    "bytes": 18507746,
+    "video": "/stories/03-a-better-question/film-360.mp4",
+    "poster": "/stories/03-a-better-question/poster.jpg",
+    "cover": "/stories/03-a-better-question/cover.jpg"
+  },
+  {
+    "title": "The Map Made Together",
+    "slug": "04-the-map-made-together",
+    "location": "Colorful contemporary gallery",
+    "useCase": "Cooperative puzzle",
+    "cast": [
+      "Boxelly",
+      "Little Boxi"
+    ],
+    "cx": 0.51,
+    "cy": 0.68,
+    "description": "Boxelly and Little Boxi bring different points of view to a shared puzzle. Their scattered clues become a path forward.",
+    "duration": 30,
+    "width": 4096,
+    "height": 2048,
+    "sha256": "70f07766241720d0be7d33d69b73324e95ff6b5b0bb17298dd251f0e8858276b",
+    "bytes": 21781838,
+    "video": "/stories/04-the-map-made-together/film-360.mp4",
+    "poster": "/stories/04-the-map-made-together/poster.jpg",
+    "cover": "/stories/04-the-map-made-together/cover.jpg"
+  },
+  {
+    "title": "Listen Before You Build",
+    "slug": "05-listen-before-you-build",
+    "location": "The Conduit art and listening room",
+    "useCase": "Mindful museum experience",
+    "cast": [
+      "Box Boi"
+    ],
+    "cx": 0.49,
+    "cy": 0.57,
+    "description": "Box Boi pauses in the Conduit art room. A quiet pulse expands into circles of light: a story that starts with listening.",
+    "duration": 30,
+    "width": 4096,
+    "height": 2048,
+    "sha256": "e6699edd6a1f4d1d7752751001a8392d18dcfe829c546795b50c4f1d21e81a0e",
+    "bytes": 17351850,
+    "video": "/stories/05-listen-before-you-build/film-360.mp4",
+    "poster": "/stories/05-listen-before-you-build/poster.jpg",
+    "cover": "/stories/05-listen-before-you-build/cover.jpg"
+  },
+  {
+    "title": "One Small Light",
+    "slug": "06-one-small-light",
+    "location": "Purple immersive art installation",
+    "useCase": "Interactive exhibition",
+    "cast": [
+      "Little Boxi"
+    ],
+    "cx": 0.55,
+    "cy": 0.63,
+    "description": "Little Boxi carries a tiny seed of light into a violet world. A careful gesture gives something wonderful room to grow.",
+    "duration": 30,
+    "width": 4096,
+    "height": 2048,
+    "sha256": "c3f9a7c79e370706167fdb9d5fb04d6340e4515dbeb1d5dd06cc8bc4950e0b80",
+    "bytes": 18620069,
+    "video": "/stories/06-one-small-light/film-360.mp4",
+    "poster": "/stories/06-one-small-light/poster.jpg",
+    "cover": "/stories/06-one-small-light/cover.jpg"
+  },
+  {
+    "title": "Yesterday Becomes Tomorrow",
+    "slug": "07-yesterday-becomes-tomorrow",
+    "location": "Earthship kitchen and bottle-glass art",
+    "useCase": "Circular design tour",
+    "cast": [
+      "Box Boi"
+    ],
+    "cx": 0.54,
+    "cy": 0.57,
+    "description": "Box Boi and a small drone explore bottle-glass art in an Earthship kitchen, finding tomorrow in yesterday’s materials.",
+    "duration": 30,
+    "width": 3508,
+    "height": 1754,
+    "sha256": "129dc873b364b0b9603468401fd01385fa14ca378b1e9dc7cb53f19ee457cd31",
+    "bytes": 14896431,
+    "video": "/stories/07-yesterday-becomes-tomorrow/film-360.mp4",
+    "poster": "/stories/07-yesterday-becomes-tomorrow/poster.jpg",
+    "cover": "/stories/07-yesterday-becomes-tomorrow/cover.jpg"
+  },
+  {
+    "title": "A Garden Is a Team",
+    "slug": "08-a-garden-is-a-team",
+    "location": "Indoor garden dome concept panorama",
+    "useCase": "Ecology storytelling",
+    "cast": [
+      "Little Boxi",
+      "Box Girl"
+    ],
+    "cx": 0.7,
+    "cy": 0.6,
+    "description": "Inside an imagined garden dome, Box Girl and Little Boxi discover how a seed, a helping hand, and a little care work together.",
+    "duration": 30,
+    "width": 4096,
+    "height": 2048,
+    "sha256": "52fb2108ca44d56b659e145502081d9996adb323c209ebb7c16ce53a3fee0477",
+    "bytes": 23120799,
+    "video": "/stories/08-a-garden-is-a-team/film-360.mp4",
+    "poster": "/stories/08-a-garden-is-a-team/poster.jpg",
+    "cover": "/stories/08-a-garden-is-a-team/cover.jpg"
+  },
+  {
+    "title": "More from Less",
+    "slug": "09-more-from-less",
+    "location": "Geodesic exhibition hall concept panorama",
+    "useCase": "Hands-on geometry",
+    "cast": [
+      "Boxiah",
+      "Boxelly"
+    ],
+    "cx": 0.56,
+    "cy": 0.56,
+    "description": "Boxiah and Boxelly build a delicate structure in an imagined geodesic hall, exploring how a few pieces can do more together.",
+    "duration": 30,
+    "width": 4096,
+    "height": 2048,
+    "sha256": "a08b0a3ef40dfc91385db517114ecfb450b253156c8b8614b2bb45d663ef1d1b",
+    "bytes": 17934483,
+    "video": "/stories/09-more-from-less/film-360.mp4",
+    "poster": "/stories/09-more-from-less/poster.jpg",
+    "cover": "/stories/09-more-from-less/cover.jpg"
+  },
+  {
+    "title": "Bring the Wonder Home",
+    "slug": "10-bring-the-wonder-home",
+    "location": "Earthship main room",
+    "useCase": "Series finale and reflection",
+    "cast": [
+      "Box Boi",
+      "Box Girl"
+    ],
+    "cx": 0.57,
+    "cy": 0.57,
+    "description": "Back in the Earthship, Box Boi and Box Girl share the discoveries they gathered along the way. A new adventure is already taking shape.",
+    "duration": 30,
+    "width": 3108,
+    "height": 1554,
+    "sha256": "0f72349ce2df254c38e85bbf0ccb3e8ef9d34b05c0766d51c46617a363309d8d",
+    "bytes": 11253492,
+    "video": "/stories/10-bring-the-wonder-home/film-360.mp4",
+    "poster": "/stories/10-bring-the-wonder-home/poster.jpg",
+    "cover": "/stories/10-bring-the-wonder-home/cover.jpg"
+  }
+]

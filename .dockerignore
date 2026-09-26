@@ -10,6 +10,7 @@ output
 tmp
 .netlify
 site-dist
+site/public/stories
 test
 scripts/finalize-ufo.js
 scripts/create-final-report.py

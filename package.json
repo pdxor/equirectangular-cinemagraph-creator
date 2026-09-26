@@ -10,7 +10,8 @@
   "scripts": {
     "dev": "node server/index.js --dev",
     "build": "vite build",
-    "build:site": "node scripts/build-demo.mjs && vite build --config vite.site.config.js",
+    "build:site": "node scripts/build-demo.mjs && node scripts/verify-public-stories.mjs && vite build --config vite.site.config.js",
+    "verify:stories": "node scripts/verify-public-stories.mjs",
     "preview:site": "vite preview --config vite.site.config.js --host 127.0.0.1 --port 4318",
     "setup": "node scripts/setup.mjs",
     "start": "node server/index.js",
