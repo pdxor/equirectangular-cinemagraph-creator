@@ -1,0 +1,34 @@
+name: Check app and Docker image
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install FFmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      - run: npm run build:site
+      - name: Build Docker image
+        run: docker build -t cinemagraph-test .
+      - name: Smoke test Docker without API keys
+        run: |
+          docker run -d --name cinemagraph-test -p 127.0.0.1:4317:4317 cinemagraph-test
+          trap 'docker logs cinemagraph-test; docker rm -f cinemagraph-test' EXIT
+          for attempt in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:4317/api/health > health.json; then break; fi
+            sleep 2
+          done
+          node --input-type=module -e "import fs from 'node:fs'; const h=JSON.parse(fs.readFileSync('health.json')); if(!h.ok || !h.ffmpeg || h.openaiConfigured || h.xaiConfigured || h.elevenlabsConfigured) process.exit(1);"
+          curl -fsS http://127.0.0.1:4317/ > /dev/null

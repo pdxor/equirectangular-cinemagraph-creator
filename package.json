@@ -1,0 +1,35 @@
+{
+  "name": "equirectangular-cinemagraph-creator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local 360 panorama remixing, multi-region cinemagraphs, scene editing and audio with your own API keys.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "node server/index.js --dev",
+    "build": "vite build",
+    "build:site": "node scripts/build-demo.mjs && vite build --config vite.site.config.js",
+    "preview:site": "vite preview --config vite.site.config.js --host 127.0.0.1 --port 4318",
+    "setup": "node scripts/setup.mjs",
+    "start": "node server/index.js",
+    "test": "node --test --test-concurrency=1 test/*.test.js",
+    "test:live": "node scripts/live-test.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "lucide-react": "^0.468.0",
+    "multer": "^2.0.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "sharp": "^0.35.4",
+    "three": "^0.180.0",
+    "zod": "^4.1.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.2",
+    "vite": "^7.1.3"
+  }
+}

@@ -1,0 +1,15 @@
+node_modules
+dist
+.env
+.env.*
+data
+test-results
+.git
+*.log
+output
+tmp
+.netlify
+site-dist
+test
+scripts/finalize-ufo.js
+scripts/create-final-report.py

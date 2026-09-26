@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+data/
+test-results/
+*.log
+.netlify/
+site-dist/
+output/
+tmp/
+# Private acceptance run scripts are kept on the author's computer.
+scripts/finalize-ufo.js
+scripts/create-final-report.py
+.DS_Store
+Thumbs.db
