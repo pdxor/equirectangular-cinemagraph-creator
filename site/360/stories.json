@@ -1,25 +1,5 @@
 [
   {
-    "title": "The Painted Path",
-    "slug": "01-the-painted-path",
-    "location": "Landscape gallery",
-    "useCase": "Art discovery",
-    "cast": [
-      "Box Boi"
-    ],
-    "cx": 0.46,
-    "cy": 0.57,
-    "description": "Box Boi follows a thread of light through a gallery, discovering that curiosity can turn an ordinary room into an invitation.",
-    "duration": 30,
-    "width": 4096,
-    "height": 2048,
-    "sha256": "b90f7c2dd1404fb198672d9bf9576376d12843b51477c7b52df5c9a0be1a021a",
-    "bytes": 15424076,
-    "video": "/stories/01-the-painted-path/film-360.mp4",
-    "poster": "/stories/01-the-painted-path/poster.jpg",
-    "cover": "/stories/01-the-painted-path/cover.jpg"
-  },
-  {
     "title": "Color Has a Pulse",
     "slug": "02-color-has-a-pulse",
     "location": "Abstract art gallery",

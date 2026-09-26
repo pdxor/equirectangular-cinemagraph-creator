@@ -2,7 +2,7 @@
 
 **Give a still panorama a little life.** Select a square region, remix its image, animate it, and blend it back into a full 360° scene. Combine scenes and moving regions, add narration and music, and export a spherical MP4.
 
-[Website & selection demo](https://equirectangular-cinemagraph-creator.netlify.app) · [Watch ten Boxboi 360° stories](https://equirectangular-cinemagraph-creator.netlify.app/360/) · [Getting started](#getting-started) · [How to use it](#how-to-use-it) · [Troubleshooting](#troubleshooting)
+[Website & selection demo](https://equirectangular-cinemagraph-creator.netlify.app) · [Watch nine Boxboi 360° stories](https://equirectangular-cinemagraph-creator.netlify.app/360/) · [Getting started](#getting-started) · [How to use it](#how-to-use-it) · [Troubleshooting](#troubleshooting)
 
 ![Original sample panorama: a flying saucer above a dome settlement at dusk](site/public/demo-panorama.svg)
 
@@ -10,13 +10,13 @@
 
 ## Watch the Boxboi collection
 
-[Small wonders, whole worlds](https://equirectangular-cinemagraph-creator.netlify.app/360/) is a public playlist of ten 30-second stories with instrumental trip-hop and sound effects, without narration. It also appears on [Kahlil’s portfolio](https://kahlilcalavas.dev/#boxboi-360). No keys or account are needed to watch.
+[Small wonders, whole worlds](https://equirectangular-cinemagraph-creator.netlify.app/360/) is a public playlist of nine 30-second stories with instrumental trip-hop and sound effects, without narration. It also appears on [Kahlil’s portfolio](https://kahlilcalavas.dev/#boxboi-360). No keys or account are needed to watch.
 
 - Drag or swipe the panorama to look around. Focus the viewer and use arrow keys to pan, `+` / `−` to zoom, or **Recenter** to return to the characters.
-- Choose a story, play/pause, seek, adjust sound, enter fullscreen, or switch to a flat preview. **Play next story** continues through the collection; **Loop collection** repeats all ten. Video starts only after a visitor presses play or selects a story.
+- Choose a story, play/pause, seek, adjust sound, enter fullscreen, or switch to a flat preview. **Play next story** continues through the collection; **Loop collection** repeats all nine. Video starts only after a visitor presses play or selects a story.
 - **Copy story link** shares a specific film. **Download 360° MP4** saves the original file with monoscopic equirectangular spherical metadata (v1 XML and v2 `sv3d/equi`). Music is stereo, not spatial audio. Sites that do not support spherical playback may still show a flat video.
 
-The standalone player is in `site/360/`; `stories.json` holds the public descriptions, camera centers, media URLs, dimensions, sizes, and SHA-256 digests. Approved public MP4s and posters are in `site/public/stories/` (about 170 MB). Only the selected video is loaded, and the player falls back to flat playback if WebGL is unavailable. These examples include AI-assisted animation and characters; the garden dome and geodesic hall are concept environments.
+The standalone player is in `site/360/`; `stories.json` holds the public descriptions, camera centers, media URLs, dimensions, sizes, and SHA-256 digests. Approved public MP4s and posters are in `site/public/stories/` (about 160 MB). Only the selected video is loaded, and the player falls back to flat playback if WebGL is unavailable. These examples include AI-assisted animation and characters; the garden dome and geodesic hall are concept environments.
 
 Run `npm run build:site` and `npm run preview:site` to preview the guide and playlist at `http://127.0.0.1:4318/360/`. `npm run verify:stories` verifies every original MP4’s digest, 2:1 dimensions, fast-start layout, and spherical metadata. This also runs before each site build. Public examples are excluded from the local renderer’s Docker image. Private projects, keys, raw generation data, and narrated variants are not published.
 

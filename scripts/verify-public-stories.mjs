@@ -4,8 +4,8 @@ import { fileURLToPath } from 'node:url';
 import assert from 'node:assert/strict';
 
 const stories = JSON.parse(await readFile(new URL('../site/360/stories.json', import.meta.url), 'utf8'));
-assert.equal(stories.length, 10, 'The public collection must contain ten stories');
-assert.equal(new Set(stories.map(story => story.slug)).size, 10, 'Story IDs must be unique');
+assert.equal(stories.length, 9, 'The public collection must contain nine stories');
+assert.equal(new Set(stories.map(story => story.slug)).size, stories.length, 'Story IDs must be unique');
 for (const story of stories) {
   assert.equal(story.width, story.height * 2, `${story.slug}: full equirectangular dimensions`);
   assert.equal(story.duration, 30);
